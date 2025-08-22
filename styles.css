@@ -66,3 +66,40 @@ button:hover {
 button:active {
   transform: scale(0.97);
 }
+
+/* --- Reszponzív kiegészítés --- */
+@media (max-width: 600px) {
+  .traffic-light {
+    padding: 15px 12px;
+    gap: 12px;
+    border-radius: 20px;
+  }
+
+  .light {
+    width: 60px;
+    height: 60px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .light {
+    width: 45px;
+    height: 45px;
+  }
+
+  .traffic-light {
+    padding: 10px 8px;
+    gap: 10px;
+    border-radius: 15px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+}
